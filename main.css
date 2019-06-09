@@ -1,0 +1,43 @@
+.box  {
+    background-color: #000;
+    width: 150px;
+    height: 0px;
+    margin: 25px;
+    animation-name: growing;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes growing {
+    from {
+        height: 0;
+    }
+    to {
+        height: 150px;
+    }
+}
+
+.ball {
+    position:absolute;
+    left:400px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    background-color: pink;
+    animation-name: jump;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes jump {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 100px;
+    }
+}
